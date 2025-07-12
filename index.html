@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="shortcut icon" href="./images/image.png" sizes="32*" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Calculator">
+    <div class="container">
+        <h1>MyCalculator</h1>
+        <div class="output" id="output"></div>
+        <div class="one">
+            <ul>
+                <li class="clac">7</li>
+                <li class="clac">8</li>
+                <li class="clac">9</li>
+                <li id="plus" class="clac">+</li>
+            </ul>
+        </div>
+        <div class="two">
+            <ul>
+                <li class="clac">4</li>
+                <li class="clac">5</li>
+                <li class="clac">6</li>
+                <li id="minus" class="clac">-</li>
+            </ul>
+        </div>
+        <div class="three">
+            <ul>
+                <li class="clac">1</li>
+                <li class="clac">2</i></li>
+                <li class="clac">3</li>
+                <li id="times" class="clac">×</li>
+            </ul>
+        </div>
+        <div class="four">
+            <ul>
+                <li onclick="clearAll()" id="clear">C</li>
+                <li class="clac" >0</li>
+                <li id="equal" onclick="calculate()">=</li>
+                <li id="devide" class="clac">÷</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/14.5.3/math.js" 
+integrity="sha512-QpBz6wY4qixDKaK8OLULmv64VyRhNDuNP/yuQlx0O/6anqoyvOE4OtJ6bvp/19/6FUq/wXa8LLvYGNCzNXMH0Q==" 
+crossorigin="anonymous" 
+referrerpolicy="no-referrer">
+</script>
+<script src="main.js"></script>
+</body>
+</html>
