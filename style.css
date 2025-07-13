@@ -12,7 +12,7 @@
     --color-two: rgb(235, 235, 235);
 }
 body{
-    width: 40%;
+    width: 50%;
     background-color: var(--color-two);
     margin: auto;
     display: flex;
@@ -41,15 +41,18 @@ h1{
 .one ,.two ,.three , .four {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     width: 100%;
 }
 li{
     display: inline-block;
     background-color: var(--color-two);
     margin:5px;
-    padding: 20px 30px;
-    border-radius: 50%;
-    width: 21%;
+    text-align: center;
+    width: 90px;
+    padding: 20px;
+    height: 80px;
+    border-radius: 20px;
     cursor: pointer;
     transition: 0.5s ease-in-out;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -72,27 +75,36 @@ li:hover{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media (max-width: 1106px) {
+@media (max-width: 1118px) {
+    h1{
+        font-size: 30px;
+    }
     body{
+        width: 50%;
         margin: 40px auto;
     }
     h1{
         margin-bottom:20px ;
     }
     .container{
-        padding: 40px;
+        padding: 60px;
     }
     li{
-        padding: 20px 25px ;
+    margin:4px;
+    text-align: center;
+    width: 80px;
+    padding: 15px;
+    height: 70px;   
+    }
     }
     .number-one , .x-mark{
-    padding: 20px 26px;
+    padding: 15px 20px;
     }
     .output{
         margin-bottom: 30px;
-    }
+        font-size: 20px;
 }
-@media (max-width: 962px) {
+@media (max-width: 970px) {
     body{
         margin: 30px auto;
     }
@@ -100,10 +112,14 @@ li:hover{
         margin-bottom:15px ;
     }
     .container{
-        padding: 30px;
+        padding: 50px;
     }
     li{
-        padding: 17px 20px ;
+        margin:3px;
+        text-align: center;
+        width: 70px;
+        padding: 10px;
+        height: 60px; 
     }
     .number-one , .x-mark{
     padding: 17px 21px;
@@ -112,7 +128,7 @@ li:hover{
         margin-bottom: 25px;
     }
 }
-@media (max-width: 820px) {
+@media (max-width: 833px) {
     body{
         margin: 25px auto;
     }
@@ -120,10 +136,14 @@ li:hover{
         margin-bottom:10px ;
     }
     .container{
-        padding: 25px;
+        padding: 40px;
     }
     li{
-        padding: 12px 15px ;
+        margin:3px;
+        text-align: center;
+        width: 60px;
+        padding: 9px;
+        height: 60px;
     }
     .number-one , .x-mark{
     padding: 12px 16px;
@@ -132,4 +152,71 @@ li:hover{
         margin-bottom: 20px;
     }
 }
+@media (max-width: 715px) {
+    body{
+        margin: 25px auto;
+    }
+    h1{
+        margin-bottom:10px ;
+    }
+    .container{
+        padding: 35px;
+    }
+    li{
+        margin:3px;
+        text-align: center;
+        width: 55px;
+        padding: 9px;
+        height: 55px;
+    }
+    .number-one , .x-mark{
+    padding: 12px 16px;
+    }
+    .output{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 654px) {
+    body{
+        margin: 25px auto;
+    }
+    h1{
+        margin-bottom:10px ;
+    }
+    .container{
+        padding: 35px;
+    }
+    li{
+        margin:3px;
+        text-align: center;
+        width: 50px;
+        padding: 8px;
+        height: 50px;
+    }
 
+    .output{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 615px) {
+    body{
+        margin: 25px auto;
+    }
+    h1{
+        margin-bottom:10px ;
+    }
+    .container{
+        padding: 35px;
+    }
+    li{
+        margin:3px;
+        text-align: center;
+        width: 49px;
+        padding: 5px;
+        height: 50px;
+    }
+
+    .output{
+        margin-bottom: 20px;
+    }
+}
