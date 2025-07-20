@@ -2,8 +2,14 @@ let clac = document.getElementsByClassName("clac");
 let output = document.getElementById("output");
 let clear = document.getElementById("clear");
 
-function writeNumbers (e) {
-    output.textContent += e.target.textContent;
+function writeNumbers(e) {
+    let clickedText = e.target.textContent;
+
+    if (clickedText === "1/2") {
+        output.textContent += "/2";
+    } else {
+        output.textContent += clickedText;
+    }
 }
 for (let i = 0; i < clac.length; i++) {
     clac[i].addEventListener("click", writeNumbers);
@@ -24,5 +30,4 @@ function calculate (){
         output.textContent = "Error";
     }
 }
-
 
