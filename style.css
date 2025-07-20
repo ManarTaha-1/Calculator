@@ -6,14 +6,14 @@
     box-sizing: border-box;
     border: none;
     list-style: none;
+    font-family:cursive;
 }
 :root {
-    --color-one: rgb(170, 40, 131);
-    --color-two: rgb(235, 235, 235);
+    --color-one: rgb(46, 58, 68);
 }
 body{
     width: 50%;
-    background-color: var(--color-two);
+    background-color: var(--color-one);
     margin: auto;
     display: flex;
     justify-content: center;
@@ -24,21 +24,20 @@ body{
 }
 h1{
     text-transform: uppercase;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    margin-bottom: 30px;
-    color: var(--color-two);
+    margin-bottom: 40px;
+    color: rgb(255, 255, 255);
 }
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(var(--color-one),rgb(50, 111, 126),rgb(70, 0, 120));
-    padding: 50px;
+    background-color: var(--color-one);
+    padding: 20px;
     border-radius: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 3px solid rgb(255, 255, 255);
 }
-.one ,.two ,.three , .four {
+.one ,.two ,.three , .four ,.base {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -46,36 +45,49 @@ h1{
 }
 li{
     display: inline-block;
-    background-color: var(--color-two);
-    margin:8px;
+    background-color: white ;
+    margin:20px 15px;
     text-align: center;
     width: 90px;
     padding: 20px;
     height: 80px;
-    border-radius: 20px;
+    border-radius: 10px;
     cursor: pointer;
     transition: 0.5s ease-in-out;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
     font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 li:hover{
     background-color: #c6c5c5;
 }
-
+.operation{
+    background-color: rgb(19, 142, 3);
+    color: rgb(255, 255, 255);
+    border-radius:40px;
+}
 .output{
-    background-color: var(--color-two);
-    margin-bottom: 40px;
+    background-color: white;
+    margin-bottom: 30px;
     padding: 10px;
     height: 50px;
-    width: 80%;
-    border-radius: 5px;
+    width: 95%;
+    border-radius: 15px;
     font-size: 22px;
     font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.zero{
+    width: 220px;
+}
+li:hover{
+    background-color: rgb(176, 188, 176);
+}
+.clac:hover{
+    background-color: rgb(176, 188, 176);
 }
 
-@media (max-width: 1118px) {
+@media (max-width: 1121px) {
     h1{
         font-size: 30px;
     }
@@ -84,19 +96,18 @@ li:hover{
         margin: 40px auto;
     }
     h1{
-        margin-bottom:20px ;
+        margin-bottom:30px ;
     }
     .container{
-        padding: 60px;
+        padding: 20px;
     }
     li{
-    margin:10px;
+    margin:17px 13px;
     text-align: center;
     width: 80px;
-    padding: 15px;
-    height: 70px; 
+    padding: 17px;
+    height: 70px;
     border-radius: 10px;
-    }
     }
     .number-one , .x-mark{
     padding: 15px 20px;
@@ -104,22 +115,26 @@ li:hover{
     .output{
         margin-bottom: 30px;
         font-size: 20px;
+    }
+    .zero{
+        width: 190px;
+    }
 }
-@media (max-width: 970px) {
+@media (max-width: 975px) {
     body{
         margin: 30px auto;
     }
     h1{
-        margin-bottom:15px ;
+        margin-bottom:30px ;
     }
     .container{
-        padding: 50px;
+        padding: 17px;
     }
     li{
-        margin:7px;
+        margin:15px 10px;
         text-align: center;
         width: 70px;
-        padding: 10px;
+        padding: 12px;
         height: 60px; 
         border-radius: 12px;
     }
@@ -129,23 +144,25 @@ li:hover{
     .output{
         margin-bottom: 25px;
     }
+    .zero{
+        width: 165px;
+    }
 }
-@media (max-width: 833px) {
+@media (max-width: 840px) {
     body{
         margin: 25px auto;
+        width: 60%;
     }
     h1{
         margin-bottom:10px ;
     }
     .container{
-        padding: 40px;
+        padding: 17px;
     }
     li{
-        margin:5px;
-        text-align: center;
-        width: 60px;
-        padding: 9px;
-        height: 62px;
+        font-size: 27px;
+        margin: 14px 9px;
+        width: 65px;
         border-radius: 8px;
     }
     .number-one , .x-mark{
@@ -154,10 +171,14 @@ li:hover{
     .output{
         margin-bottom: 20px;
     }
+    .zero{
+        width: 155px;
+    }
 }
 @media (max-width: 715px) {
     body{
         margin: 25px auto;
+        width: 70%
     }
     h1{
         margin-bottom:10px ;
@@ -166,11 +187,10 @@ li:hover{
         padding: 35px;
     }
     li{
-        margin:3px;
+        margin:13px 8px;
         text-align: center;
-        width: 53px;
-        padding: 9px;
-        height: 53px;
+        width: 65px;
+        height: 60px;
         border-radius: 12px;
     }
     .number-one , .x-mark{
@@ -180,169 +200,105 @@ li:hover{
         margin-bottom: 20px;
     }
 }
-@media (max-width: 660px) {
-    body{
-        margin: 25px auto;
-    }
-    h1{
-        margin-bottom:10px ;
-    }
-    .container{
-        padding: 35px;
-    }
-    li{
-        margin:3px;
-        text-align: center;
-        width: 50px;
-        padding: 8px;
-        height: 50px;
-        border-radius: 12px;
-    }
-
-    .output{
-        margin-bottom: 20px;
-    }
-}
 @media (max-width: 620px) {
     body{
-        margin: 25px auto;
-    }
-    h1{
-        margin-bottom:10px ;
-    }
-    .container{
-        padding: 35px;
-    }
-    li{
-        margin:3px;
-        text-align: center;
-        width: 49px;
-        padding: 5px;
-        height: 50px;
-        border-radius: 12px;
-    }
-
-    .output{
-        margin-bottom: 20px;
-    }
-}
-@media (max-width: 560px) {
-    body{
-        width: 70%;
-        margin: 25px auto;
-    }
-    h1{
-        margin-bottom:10px ;
-    }
-    .container{
-        padding: 35px;
-    }
-    li{
-        margin:3px;
-        text-align: center;
-        width: 46px;
-        padding: 6px;
-        height: 50px;
-        border-radius: 5px;
-    }
-
-    .output{
-        margin-bottom: 20px;
+        width: 80%;
     }
 }
 @media (max-width: 540px) {
     body{
-
-        margin: 25px auto;
+        width: 85%;
     }
-    h1{
-        font-size: 25px;
-        margin-bottom:10px ;
-    }
-    .container{
-        padding: 35px;
-    }
-    li{
-        margin:3px;
-        text-align: center;
-        width: 44px;
-        padding: 8px;
-        border-radius: 5px;
-        height: 52px;
-    }
-
-    .output{
-        margin-bottom: 20px;
-        height: 42px;
-        }
 }
 @media (max-width: 500px) {
-
-    body{
-        width: 80%;
-        margin: 25px auto;
-    }
-    h1{
-        margin-bottom:10px ;
-    }
+.zero{
+    width: 150px;
+}
+}
+@media (max-width: 487px) {
     .container{
-        padding: 30px;
+        padding: 10px;
     }
     li{
-        margin:3px;
+        margin:10px 7px;
         text-align: center;
-        width: 42px;
-        padding: 6px;
-        border-radius: 3px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
     }
+
     .output{
         margin-bottom: 20px;
     }
+    .zero{
+        width: 150px;
+    }
 }
-@media (max-width: 450px) {
+@media (max-width: 442px) {
     body{
-        margin: 25px auto;
+        width: 90%;
     }
     h1{
-        margin-bottom:10px ;
+        font-size: 30px;
+        margin-bottom:20px ;
     }
     .container{
         padding: 28px;
     }
     li{
-        margin:3px;
-        text-align: center;
-        width: 40px;
-        padding: 5px;
-        border-radius: 3px;
-        height: 50px;
+        font-size: 22px;
+        width: 60px;
+        height: 65px;
     }
-
     .output{
         margin-bottom: 20px;
     }
+    .zero{
+        width: 140px;
+    }
 }
-@media (max-width: 400px) {
+@media (max-width: 415px) {
     body{
-        margin: 25px auto;
+        width: 95%;
     }
     h1{
+        font-size: 28px;
+        margin-bottom:25px ;
+    }
+    .container{
+        padding: 20px;
+    }
+    li{
         font-size: 20px;
-        margin-bottom:10px ;
-    }
-    .container{
-        padding: 28px;
-    }
-    li{
-        margin:3px;
-        text-align: center;
-        width: 40px;
-        padding: 6px;
-        border-radius: 3px;
-        height: 50px;
+        width: 55px;
+        height: 60px;
     }
     .output{
-        margin-bottom: 20px;
+        margin-bottom: 15px;
+    }
+    .zero{
+        width: 120px;
+    }
+}
+@media (max-width: 375px) {
+    body{
+        width: 100%;
+    }
+    h1{
+        font-size: 26px;
+        margin-bottom:20px ;
+    }
+    .container{
+        padding: 15px;
+    }
+    li{
+        font-size: 18px;
+        width: 50px;
+        height: 55px;
+    }
+    .output{
+        margin-bottom: 10px;
+    }
+    .zero{
+        width: 110px;
     }
 }
